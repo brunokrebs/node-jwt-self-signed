@@ -1,3 +1,14 @@
+## Using This Repo
+
+```bash
+npm i
+npm run dev
+
+# copy the token generated in the logs to the JWT variable and...
+
+curl -H 'Authorization: Bearer '$JWT 0:3000/protected
+```
+
 ## Generate RS256 Private/Public Key Pair
 
 ```bash
