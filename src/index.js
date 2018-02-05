@@ -5,8 +5,8 @@ const fs = require('fs');
 
 const app = express();
 
-const privateKey = fs.readFileSync('/Users/brunokrebs/git/tmp/forge/src/private.key');  // get private key
-const publicKey = fs.readFileSync('/Users/brunokrebs/git/tmp/forge/src/public.key');
+const privateKey = fs.readFileSync('./src/private.key');  // get private key
+const publicKey = fs.readFileSync('./src/public.key');
 const token = jsonwebtoken.sign({ foo: 'bar' }, privateKey, { algorithm: 'RS256'});
 console.log(token); // <= use this token
 
