@@ -7,3 +7,4 @@ openssl rsa -in private.key -pubout -outform PEM -out public.key
 cat private.key
 cat public.key
 ```
+> Credits: https://gist.github.com/ygotthilf/baa58da5c3dd1f69fae9
